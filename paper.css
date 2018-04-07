@@ -1,0 +1,107 @@
+body{
+	background-color: coral;
+	margin: 0 auto;
+}
+
+/*  *************  Nav     &&&&&&&&&&&&&&&&&&&&&&&*/
+
+nav{
+	display: inline-block;
+	background-color: white;
+	width: 100%;
+
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+	margin: 1rem 2rem;
+}
+
+/*   ))))))))))))))))    Big Image    <<<<<<<<<<<<<<<<<<<<<<<*/
+/*
+
+#splash {
+	width: 100%;
+	object-fit: cover;
+	height: 30rem;
+}*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 30rem; 
+}
+
+#split1{
+	background-image: url(images/createBulb.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+#split2{
+	background-image: url(images/wingedHearts.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+#firstName{
+	text-align: right;
+}
+#lastName{
+	text-align: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*   &&&&&&&&&&&            Main Section      &&&&&&&&&&*/
+
+.text {
+	padding: 1rem 2rem;
+}
+
+
+/*   $$$$$$$$$$       FOOTER      $$$$$$$$$$$$$$$$$*/
+
+footer{
+	padding: 0rem 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+    	height: 16rem;
+        width: 100%;
+    }
+
+	#firstName{
+		text-align: bottom;
+	}
+	#lastName{
+		text-align: top;
+	}
+
+
+
+
+
+
+
+}

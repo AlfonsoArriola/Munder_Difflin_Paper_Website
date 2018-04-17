@@ -1,5 +1,5 @@
 body{
-	background-color: coral;
+	
 	margin: 0 auto;
 }
 
@@ -19,6 +19,10 @@ ul{
 li{
 	float: left;
 	margin: 1rem 2rem;
+}
+
+h1{
+	font-size: 8em;
 }
 
 /*   ))))))))))))))))    Big Image    <<<<<<<<<<<<<<<<<<<<<<<*/
@@ -61,9 +65,13 @@ li{
 
 #firstName{
 	text-align: right;
+	color: #42edbf;
+	text-shadow: 2px 2px black;
 }
 #lastName{
 	text-align: left;
+	color: #42edbf;
+	text-shadow: 2px 2px white;
 }
 
 .row:after {
@@ -78,14 +86,84 @@ li{
 }
 
 
+/*   *********************         Copy Paper    ***************************/
+
+#copyPaper{
+	background-image: url(images/copyp.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+}
+
+
+/*#copyPaperSmall{
+	height: 5rem;
+	width: 5rem;
+	float: left;
+
+	object-fit: contain;
+}*/
+
+.copyBlurb{
+	width: 30rem;
+	text-align: center;
+	height: 40rem;
+	margin: 0rem 2rem 2rem 40rem;
+
+	background-color: powderblue;
+}
+
+/*  &&&&&&&&&&&&&&&&&&&&&&&&&&&  Arts N Crafts   #####################*/
+
+
+#artsAndCrafts{
+	background-image: url(images/origami-23.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+
+}
+/*))))))))))))))))))))))))))))     Notebooks   ((((((((((((((((((((((((((((((*/
+#notebooks{
+	background-image: url(images/adventure.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+
+}
+
+
+#email{
+
+
+}
+
+
+
+
+
+
+
+
 /*   $$$$$$$$$$       FOOTER      $$$$$$$$$$$$$$$$$*/
 
 footer{
 	padding: 0rem 1rem;
-}
 
+}
+/*  )))))))))))))))      Break Points     ((((((((((((((((((((((*/
 
 @media screen and (max-width: 600px) {
+
+	h1{
+		font-size: 5em;
+	}
     .column {
     	height: 16rem;
         width: 100%;
@@ -99,8 +177,18 @@ footer{
 	}
 
 
+@media screen and (max-width: 400px) {
+    .column {
+    	height: 16rem;
+        width: 100%;
+    }
 
-
+	#firstName{
+		text-align: bottom;
+	}
+	#lastName{
+		text-align: top;
+	}
 
 
 

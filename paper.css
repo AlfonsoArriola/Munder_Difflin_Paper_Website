@@ -1,7 +1,22 @@
-body{
-	
+body{	
 	margin: 0 auto;
 }
+
+button{
+	height: 4rem;
+	width: 10rem;
+	background: linear-gradient(to bottom right, #6EB7AC, #ffffff);
+	color:black;
+	font-size: 1.6em;
+}
+
+input{
+	border: 1px solid gold;
+	width: 17rem;
+	height: 2rem;
+	text-align: center;
+}
+
 
 /*  *************  Nav     &&&&&&&&&&&&&&&&&&&&&&&*/
 
@@ -9,7 +24,10 @@ nav{
 	display: inline-block;
 	background-color: white;
 	width: 100%;
+}
 
+.fixed-nav nav{
+	position: fixed;
 }
 
 ul{
@@ -19,20 +37,22 @@ ul{
 li{
 	float: left;
 	margin: 1rem 2rem;
+	color: #B76E79;
+	font-size: 1.4em;
+
 }
+
+li:hover {
+	color: #6EB7AC;
+	font-weight: bold;
+}
+
 
 h1{
 	font-size: 8em;
 }
 
 /*   ))))))))))))))))    Big Image    <<<<<<<<<<<<<<<<<<<<<<<*/
-/*
-
-#splash {
-	width: 100%;
-	object-fit: cover;
-	height: 30rem;
-}*/
 
 
 * {
@@ -45,9 +65,10 @@ h1{
     width: 50%;
     padding: 10px;
     height: 30rem; 
+    padding: 7rem 3rem 3rem 3rem;
 }
 
-#split1{
+#split1 {
 	background-image: url(images/createBulb.jpg);
 	background-repeat: no-repeat;
     background-size: auto;
@@ -55,7 +76,7 @@ h1{
     background-size: cover;
 }
 
-#split2{
+#split2 {
 	background-image: url(images/wingedHearts.jpg);
 	background-repeat: no-repeat;
     background-size: auto;
@@ -65,31 +86,75 @@ h1{
 
 #firstName{
 	text-align: right;
-	color: #42edbf;
+	color: #6EB7AC;
 	text-shadow: 2px 2px black;
+	word-spacing: 2px;
 }
 #lastName{
 	text-align: left;
-	color: #42edbf;
-	text-shadow: 2px 2px white;
+	color: #6EB7AC;
+	text-shadow: 2px 2px black;
+	word-spacing: 2px;
 }
+
+.slogan{
+	text-align: center;
+}
+
 
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-/*   &&&&&&&&&&&            Main Section      &&&&&&&&&&*/
+
+.summary{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 2rem;
+	border: 3px solid #B76E79;
+
+}
+/*   &&&&&&&&&&&            Paper types section      &&&&&&&&&&*/
 
 .text {
 	padding: 1rem 2rem;
 }
 
+.growImage {
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.growImage:hover{
+	transform: scale(1.9);
+  -moz-transform: scale(1.9);
+
+}
+
+.copyAd{
+	visibility: hidden;
+	float: left;
+	
+
+}
+
+.aNcAd{
+	visibility: hidden;
+	float: left;
+	
+}
+
+.nbAd{
+	visibility: hidden;
+	float: left;
+	
+	
+}
 
 /*   *********************         Copy Paper    ***************************/
 
 #copyPaper{
-	background-image: url(images/copyp.jpg);
+	background-image: url(images/chart.jpg);
 	background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -98,35 +163,62 @@ h1{
 }
 
 
-/*#copyPaperSmall{
-	height: 5rem;
-	width: 5rem;
-	float: left;
-
+#copyPaperSmall{
+	height: 10rem;
+	width: 10rem;
+	margin-left: 3rem;
 	object-fit: contain;
-}*/
+	border: 3px solid #B76E79;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+    transition: width 2s, height 2s, transform 2s;
+    z-index: 1;
+	
+}
 
-.copyBlurb{
+
+
+
+/*.copyBlurb{
+	float: right;
 	width: 30rem;
 	text-align: center;
 	height: 40rem;
 	margin: 0rem 2rem 2rem 40rem;
-
-	background-color: powderblue;
-}
+	border: 1px solid white;
+	padding: 3rem 2rem 3rem 2rem;
+}*/
 
 /*  &&&&&&&&&&&&&&&&&&&&&&&&&&&  Arts N Crafts   #####################*/
 
 
 #artsAndCrafts{
-	background-image: url(images/origami-23.jpg);
+	background-image: url(images/greenLion.jpg);
 	background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
     background-size: cover;
     height: 40rem;
-
 }
+
+#aNcSmall{
+	height: 10rem;
+	width: 10rem;
+	object-fit: contain;
+	margin-left: 3rem;
+	margin-top: 10rem;
+	border: 3px solid #B76E79;
+	
+}
+
+/*.aNcBlurb {
+	float: left;
+	width: 30rem;
+	text-align: center;
+	height: 40rem;
+	margin: 0rem 0rem 0rem 2rem;
+	border: 1px solid white;
+	padding: 3rem 2rem 3rem 2rem;
+}*/
 /*))))))))))))))))))))))))))))     Notebooks   ((((((((((((((((((((((((((((((*/
 #notebooks{
 	background-image: url(images/adventure.jpg);
@@ -138,28 +230,85 @@ h1{
 
 }
 
+#nbSmall{
+	height: 10rem;
+	width: 10rem;
+	object-fit: contain;
+	margin-left: 3rem;
+	border: 3px solid #B76E79;
+	
+}
 
-#email{
+/*.notebookBlurb{
+	width: 30rem;
+	text-align: center;
+	height: 40rem;
+	margin: 0rem 2rem 2rem 40rem;
+	border: 1px solid white;
+}*/
 
+/*^^^^^^^^^^^^^^^^           CEO & Emal    >>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+#finalwords{
+	height: 30rem;
+}
+#CEO{
+	background-image: url(images/paperboi.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
 
 }
 
+#CEOsidepic{
+	background-image: url(images/postheart.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#qoute{
+	margin-top: 10rem;
+	font-size: 2em;
+	color: #6EB7AC;
+}
+
+#email{
+	text-align: center;
+}
+
+#email h2 {
+	font-size: 4em;
+}
 
 
-
-
+#email2 {
+	visibility: hidden;
+}
 
 
 
 /*   $$$$$$$$$$       FOOTER      $$$$$$$$$$$$$$$$$*/
 
 footer{
+	height: 1rem;
 	padding: 0rem 1rem;
-
+	
+	text-align: center;
+	clear: left;
+	/*box-sizing: border-box;*/
 }
+
+/*#footerNotes{
+	margin-top: 3rem;
+}*/
 /*  )))))))))))))))      Break Points     ((((((((((((((((((((((*/
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
 
 	h1{
 		font-size: 5em;
@@ -171,25 +320,138 @@ footer{
 
 	#firstName{
 		text-align: bottom;
+
 	}
 	#lastName{
 		text-align: top;
-	}
+	}*/
+/*   ^^^^^^^            Break Points     >>>>>>>>>>>>>>>>>>*/
 
 
-@media screen and (max-width: 400px) {
+@media (max-width: 900px) {
     .column {
     	height: 16rem;
         width: 100%;
     }
 
 	#firstName{
-		text-align: bottom;
+		text-align: center;
+		font-size: 5em;
 	}
 	#lastName{
-		text-align: top;
+		text-align: center;
+		font-size: 5em;
 	}
+
+	.slogan{
+	visibility: hidden;
+}
+
+	button{
+	height: 3rem;
+	width: 6rem;
+	background: linear-gradient(to bottom right, #15d822, #ffffff);
+	color:black;
+	font-size: 1em;	
+}
+
+
+#copyPaperSmall{
+	visibility: hidden;	
+}
+#copyPaper{
+	background-image: url(images/chart.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    height: 35rem;
+
+}
+
+#aNcSmall{
+	visibility: hidden;
+}
+
+#nbSmall{
+	visibility: hidden;
+}
+
+
+.summary{
+
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 1rem;
+    border: 3px solid #B76E79;
+    width: 40rem;
+}
+
+#finalwords{
+	background-image: url(images/oneheart2.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#CEO {
+	visibility: hidden;
+}
+#CEOsidepic{
+	visibility: hidden;
+}
+
+#email{
+	visibility: hidden;
+}
+#email2{
+  visibility: visible;
+  text-align: center;
+  font-size: 3em;
+}
+
+footer{
+	
+}
+
+
+}
+
+
+
+@media(max-width: 400px) {
+
+      
+      #copyPaper{
+      	display: none;
+      }
+      #artsAndCrafts{
+	   display: none;
+      }
+      #notebooks{
+      	display: none;
+      }
+      #finalwords{
+      	display: none;
+      }
+
+      #navbar{
+      	display: none;
+      }
+
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+

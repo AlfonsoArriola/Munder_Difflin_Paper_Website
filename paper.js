@@ -10,8 +10,7 @@ const topOfNav = domrec.top;
         	nav.style.top=0;
         } else{
         	
-        	nav.style.position='static';
-        	
+        	nav.style.position='static';      	
         }
  };
 
@@ -59,47 +58,47 @@ const topOfNav = domrec.top;
 
 
 
-document.querySelector('#copyPaperSmall').onmouseover = function() {mouseOver()};
-document.querySelector('#copyPaperSmall').onmouseout = function() {mouseOut()};
+// document.querySelector('#copyPaperSmall').onmouseover = function() {mouseOver()};
+// document.querySelector('#copyPaperSmall').onmouseout = function() {mouseOut()};
 
-function mouseOver(){
-	document.querySelector(".copyAd").style.visibility="visible";
-	document.querySelector(".copyAd2").style.visibility="hidden";
-}
-function mouseOut(){
-	document.querySelector(".copyAd").style.visibility="hidden";
-	document.querySelector(".copyAd2").style.visibility="visible";
+// function mouseOver(){
+// 	document.querySelector(".copyAd").style.visibility="visible";
+// 	document.querySelector(".copyAd2").style.visibility="hidden";
+// }
+// function mouseOut(){
+// 	document.querySelector(".copyAd").style.visibility="hidden";
+// 	document.querySelector(".copyAd2").style.visibility="visible";
 	
-}
-// -------------------------------------------------------
+// }
+// // -------------------------------------------------------
 
-document.querySelector('#aNcSmall').onmouseover = function() {mouseOver()};
-document.querySelector('#aNcSmall').onmouseout = function() {mouseOut()};
+// document.querySelector('#aNcSmall').onmouseover = function() {mouseOver()};
+// document.querySelector('#aNcSmall').onmouseout = function() {mouseOut()};
 
-function mouseOver(){
-	document.querySelector(".aNcAd").style.visibility="visible";
-	document.querySelector(".aNcAd2").style.visibility="hidden";
-}
-function mouseOut(){
-	document.querySelector(".aNcAd").style.visibility="hidden";
-	document.querySelector(".aNcAd2").style.visibility="visible";	
-}
+// function mouseOver(){
+// 	document.querySelector(".aNcAd").style.visibility="visible";
+// 	document.querySelector(".aNcAd2").style.visibility="hidden";
+// }
+// function mouseOut(){
+// 	document.querySelector(".aNcAd").style.visibility="hidden";
+// 	document.querySelector(".aNcAd2").style.visibility="visible";	
+// }
 
-// 0*************************************
+// // 0*************************************
 
 
-document.querySelector('#nbSmall').onmouseover = function() {mouseOver()};
-document.querySelector('#nbSmall').onmouseout = function() {mouseOut()};
+// document.querySelector('#nbSmall').onmouseover = function() {mouseOver()};
+// document.querySelector('#nbSmall').onmouseout = function() {mouseOut()};
 
-function mouseOver(){
-	document.querySelector(".nbAd").style.visibility="visible";
-	document.querySelector(".nbAd2").style.visibility="hidden";
-}
-function mouseOut(){
-	document.querySelector(".nbAd").style.visibility="hidden";
-	document.querySelector(".nbAd2").style.visibility="visible";
+// function mouseOver(){
+// 	document.querySelector(".nbAd").style.visibility="visible";
+// 	document.querySelector(".nbAd2").style.visibility="hidden";
+// }
+// function mouseOut(){
+// 	document.querySelector(".nbAd").style.visibility="hidden";
+// 	document.querySelector(".nbAd2").style.visibility="visible";
 	
-}
+// }
 
 
 
